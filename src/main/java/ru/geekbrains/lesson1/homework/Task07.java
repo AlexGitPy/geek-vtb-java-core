@@ -2,15 +2,15 @@ package ru.geekbrains.lesson1.homework;
 
 import java.util.Arrays;
 
-public class HW1Task5 {
+public class Task07 {
 
     public static void main(String[] args) {
 
-        int[] intArr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+        int[] intArr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 
-        for (int i=0; i < intArr.length; i++) {
-            if (intArr[i] != 1) {
-                intArr[i] = 1;
+        for (int i : intArr) {
+            if (intArr[i] < 6) {
+                intArr[i] *= 2;
             }
         }
 

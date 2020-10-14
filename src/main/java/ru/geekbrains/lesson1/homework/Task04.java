@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1.homework;
 
-public class HW1Task4 {
+public class Task04 {
 
     public static void main(String[] args) {
         hello("Александр");

@@ -2,7 +2,7 @@ package ru.geekbrains.lesson1.homework;
 
 import java.util.Arrays;
 
-public class HW1Task6 {
+public class Task06 {
 
     public static void main(String[] args) {
 
