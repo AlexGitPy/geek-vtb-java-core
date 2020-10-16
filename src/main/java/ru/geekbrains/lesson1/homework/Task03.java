@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1.homework;
 
-public class HW1Task3 {
+public class Task03 {
 
     public static void main(String[] args) {
         System.out.println(checkBooleanNumber(-1));

@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1.homework;
 
-public class HW1Task2 {
+public class Task02 {
 
     public static void main(String[] args) {
         positiveOrNegative(0);
