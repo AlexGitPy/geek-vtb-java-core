@@ -8,6 +8,8 @@ public class Task1 {
 
     public static void main(String[] args) {
 
+        Task1 task1 = new Task1();
+
         String[] words = new String[12];
         words[0] = "Создать";
         words[1] = "массив";
@@ -22,11 +24,11 @@ public class Task1 {
         words[10] = "вывести";
         words[11] = "список";
         System.out.println(Arrays.toString(words));
-        System.out.println(wordUnique(words));
-        System.out.println(wordCounts(words));
+        System.out.println(task1.wordUnique(words));
+        System.out.println(task1.wordCounts(words));
     }
 
-    public static Map<String, String> wordUnique(String[] words) {
+    public Map<String, String> wordUnique(String[] words) {
         Map<String, String> wordCounts = new HashMap<>();
         for (String word : words) {
             if (!wordCounts.containsKey(words)) {
@@ -37,7 +39,7 @@ public class Task1 {
 
     }
 
-    public static Map<String, Integer> wordCounts(String[] words) {
+    public Map<String, Integer> wordCounts(String[] words) {
         Map<String, Integer> wordCounts = new HashMap<>();
         for (String word : words) {
             if (!wordCounts.containsKey(word)) {
