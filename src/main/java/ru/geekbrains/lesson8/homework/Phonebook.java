@@ -15,13 +15,19 @@ public class Phonebook {
 
         phonebookEx.add(phonebook, "+7999999921", "Ермаков");
         System.out.println(phonebook);
+        phonebookEx.add(phonebook, "+7999999921", "Ермакова");
+        System.out.println(phonebook);
 
         phonebookEx.get(phonebook, "Бубликова");
 
     }
 
     public void add(Map<String, String> phonebook,String phoneNumber, String lastName) {
+        if (!phonebook.containsKey(phoneNumber)) {
         phonebook.put(phoneNumber, lastName);
+        } else {
+                System.out.println("This number is already in phonebook");
+            }
     }
 
     public void get(Map<String, String> phonebook, String lastName) {
