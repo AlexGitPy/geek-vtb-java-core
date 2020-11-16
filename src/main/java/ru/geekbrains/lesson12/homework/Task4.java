@@ -19,10 +19,14 @@ public class Task4 {
 
     public static void main(String[] args) {
 
-        long collect = lines.stream()
-                .flatMap(line -> Arrays.stream(line.split(""))).count();
+//        long collect = lines.stream()
+//                .flatMap(line -> Arrays.stream(line.split(""))).count();
 
-        System.out.println(collect);
+        int sum = lines.stream()
+                .mapToInt(String::length)
+                .sum();
+
+        System.out.println(sum);
 
     }
 

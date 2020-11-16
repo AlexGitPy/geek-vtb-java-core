@@ -17,8 +17,8 @@ public class Task5 {
 
         List<String> distinct = lines.stream()
                 .flatMap(line -> Arrays.stream(line.split(" ")))
-                .limit(3)
                 .sorted()
+                .limit(3)
                 .collect(Collectors.toList());
 
         System.out.println("Words in lines: " + distinct);
